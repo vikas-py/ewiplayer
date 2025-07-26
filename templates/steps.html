@@ -6,21 +6,6 @@
 <body>
     <h1>SOP Steps</h1>
     {% if all_done %}
-    <p>All steps completed!</p>
-    {% endif %}
-    <form method="post">
-        <ul>
-        {% for step in steps %}
-            <li>
-                <label>
-                    <input type="checkbox" name="step" value="{{ loop.index0 }}" {% if step.done %}checked{% endif %}>
-                    {{ step.text }}
-                </label>
-            </li>
-        {% endfor %}
-        </ul>
-        <button type="submit">Update</button>
-    </form>
-    <a href="{{ url_for('reset') }}">Reset SOP</a>
+
 </body>
 </html>

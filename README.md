@@ -1,7 +1,6 @@
 # SOP Web App
 
 This lightweight Flask application lets you upload SOPs written in Markdown
-and walk through them step by step. Each step can be marked completed.
 
 ## Setup
 

@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <title>Executed SOPs</title>
+</head>
+<body>
+    <h1>Executed SOPs</h1>
+    {% if entries %}
+        <ul>
+        {% for e in entries %}
+            <li>
+                <strong>{{ e.timestamp }}</strong>
+                <pre>{{ e.content }}</pre>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No SOPs executed yet.</p>
+    {% endif %}
+    <a href="{{ url_for('upload') }}">Upload New SOP</a>
+</body>
+</html>
